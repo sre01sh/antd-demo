@@ -6,8 +6,12 @@ export default {
       path: '/',
       component: '../layout',
       routes: [
-        {path: '/', component: './puzzlecards' },
+        {path: '/', component: './locale' },
         {path: '/puzzlecards',component: './HelloWorld'},
+        {path: '/a',component: './puzzlecards'},
+        {path: '/l',component: 'index'},
+        {path: '/less',component: 'css-modules-with-less/index'},
+        {path: '/less2',component: 'css-modules-with-antd/index'},
         {
           path: '/dashboard',
           routes: [
@@ -16,6 +20,10 @@ export default {
             { path: 'workplace', component: 'Dashboard/Workplace' }
           ]
         },
+        { path: 'list', component: 'list' },
       ]
     }],
+    // theme: {
+    //   "@primary-color": "#30b767", // 绿色
+    // },
 };
